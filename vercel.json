@@ -1,0 +1,3 @@
+{
+  "rewrites": [{ "source": "/", "destination": "/Descubre la Navidad.html" }]
+}
