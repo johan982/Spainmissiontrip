@@ -87,9 +87,11 @@ h1 { margin: 0; line-height: 0; width: min(506px, 100%); filter: drop-shadow(0 6
 .free { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
 .free strong { background: var(--red); color: #fff; font-weight: 800; font-size: 15px; letter-spacing: .06em; padding: 7px 14px; border-radius: 999px; }
 .free span { font-weight: 600; font-size: 15px; color: var(--gold); letter-spacing: .04em; text-transform: uppercase; }
-.times { display: grid; grid-template-columns: 8em auto; justify-content: start; gap: 4px 16px; margin: 0; font-variant-numeric: tabular-nums; }
+.times { display: grid; grid-template-columns: 16em auto; justify-content: start; gap: 4px 16px; margin: 0; font-variant-numeric: tabular-nums; }
 .times dt, .times dd { margin: 0; white-space: nowrap; font-weight: 800; font-size: clamp(20px, 2vw, 24px); line-height: 1.35; }
 .times dd { color: var(--gold); }
+.times .city { display: inline-block; min-width: 5.4em; font-size: .72em; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); vertical-align: .12em; }
+@media (max-width: 480px) { .times { grid-template-columns: 12.2em auto; column-gap: 8px; } .times dt, .times dd { font-size: 17px; } }
 .place { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--cream); margin: 0; }
 .place svg { flex: none; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 4px; }
@@ -383,22 +385,22 @@ td.empty { color: var(--muted); text-align: center; padding: 28px; }
       <div class="details">
         <div class="free"><strong>EVENTO GRATIS</strong><span>Show familiar · 6 funciones</span></div>
         <dl class="times">
-          <dt>MAR 1 DIC</dt><dd>6:00 PM</dd>
+          <dt><span class="city">Málaga –</span> MAR 1 DIC</dt><dd>6:00 PM</dd>
         </dl>
         <p class="place">
           <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="var(--gold)" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
           Avenida Fátima 23, Málaga
         </p>
         <dl class="times">
-          <dt>JUE 3 DIC</dt><dd>6:30 y 8:00 PM</dd>
-          <dt>VIE 4 DIC</dt><dd>6:30 y 8:00 PM</dd>
+          <dt><span class="city">Marbella –</span> JUE 3 DIC</dt><dd>6:30 y 8:00 PM</dd>
+          <dt><span class="city">Marbella –</span> VIE 4 DIC</dt><dd>6:30 y 8:00 PM</dd>
         </dl>
         <p class="place">
           <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="var(--gold)" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
           Plaza Central · Centro Comercial La Cañada
         </p>
         <dl class="times">
-          <dt>SÁB 5 DIC</dt><dd>5:00 PM</dd>
+          <dt><span class="city">Marbella –</span> SÁB 5 DIC</dt><dd>5:00 PM</dd>
         </dl>
         <p class="place">
           <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="var(--gold)" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
